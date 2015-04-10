@@ -1,0 +1,11 @@
+<form action="/movies/show">
+  Which movie?
+  <input name="hockey">
+  <button>Submit</button>
+</form>
+
+<ul>
+  <% @movies.each_with_index do |movie, n| %>
+    <li><a href="/movies/show?index=<%= n %>"><%= movie %></a></li>
+  <% end %>
+</ul>
