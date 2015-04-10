@@ -1,7 +1,7 @@
 class GameController < ApplicationController
 
   def roll
-    render "show_dice"
+    @numbers = [1,2,3,4,5,6].sample(2)
   end
 
 end
